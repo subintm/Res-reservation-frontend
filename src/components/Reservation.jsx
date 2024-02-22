@@ -18,7 +18,7 @@
   const handleReservation =async(e)=>{
     e.preventDefault()
     try{
-      const {data} =await axios.post("http://localhost:3002/api/v1/reservation/send",
+      const {data} =await axios.post("https://res-reservation-backend-1.onrender.com/api/v1/reservation/send",
       {firstName,lastName,email,phone,date,time},
       {
         headers:{
